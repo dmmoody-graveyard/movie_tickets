@@ -12,3 +12,7 @@ var Movie = {
     this.releaseDate = Date.parse(date);
   }
 };
+
+var Pricing = {
+
+};

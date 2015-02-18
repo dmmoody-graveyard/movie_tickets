@@ -45,9 +45,17 @@ describe('Movie', function() {
 describe('Pricing', function() {
   describe('firstRun', function() {
     it('takes a price and returns 8.95', function() {
-      var newPrice = Object.create(Price);
-      newPrice.firstRun = 8.95;
-      expect(newPrice.firstRun).to.equal(8.95);
+      var newPricing = Object.create(Pricing);
+      newPricing.firstRun = 8.95;
+      expect(newPricing.firstRun).to.equal(8.95);
+    });
+  });
+
+  describe('secondRun', function() {
+    it('takes a price and returns 6.45', function() {
+      var newPricing = Object.create(Pricing);
+      newPricing.secondRun = 6.45;
+      expect(newPricing.secondRun).to.equal(6.45);
     });
   });
 });
