@@ -17,7 +17,7 @@ describe('Person', function() {
 });
 
 describe('Movie', function() {
-  describe('name', function () {
+  describe('name', function() {
     it('takes a movies name and returns "X-Men"', function () {
       var newMovie = Object.create(Movie);
       newMovie.name = 'X-Men';
@@ -59,20 +59,19 @@ describe('Pricing', function() {
     });
   });
 
-  describe('seniorDiscount', function () {
-    it('takse discount dollar amount and returns 3', function() {
+  describe('seniorDiscount', function() {
+    it('takes discount dollar amount and returns 3', function() {
       var newPricing = Object.create(Pricing);
       newPricing.seniorDiscount = 3;
       expect(newPricing.seniorDiscount).to.equal(3);
     });
   });
+
+  describe('matineeDiscount', function() {
+    it('takes discount dollar amount and returns 3', function() {
+      var newPricing = Object.create(Pricing);
+      newPricing.matineeDiscount = 3;
+      expect(newPricing.matineeDiscount).to.equal(3);
+    });
+  });
 });
-
-
-
-// var pricing = {
-//   firstRun: 8.95,
-//   secondRun: 6.45,
-//   seniorDiscount: 3,
-//   matineeDiscount: 3
-// }
