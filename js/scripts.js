@@ -16,3 +16,7 @@ var Movie = {
 var Pricing = {
 
 };
+
+$(document).ready(function() {
+
+});
