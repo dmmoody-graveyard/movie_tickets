@@ -58,6 +58,14 @@ describe('Pricing', function() {
       expect(newPricing.secondRun).to.equal(6.45);
     });
   });
+
+  describe('seniorDiscount', function () {
+    it('takse discount dollar amount and returns 3', function() {
+      var newPricing = Object.create(Pricing);
+      newPricing.seniorDiscount = 3;
+      expect(newPricing.seniorDiscount).to.equal(3);
+    });
+  });
 });
 
 
