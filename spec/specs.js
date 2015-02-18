@@ -35,8 +35,8 @@ describe('Movie', function() {
 
   describe('releaseDate', function() {
     it('takes a date and returns 1424246400000', function() {
-      var newMovies = Object.create(Movie);
-      newMovie.dateReleased('Feb 18, 2015');
+      var newMovie = Object.create(Movie);
+      newMovie.date('Feb 18, 2015');
       expect(newMovie.releaseDate).to.equal(1424246400000);
     });
   });
