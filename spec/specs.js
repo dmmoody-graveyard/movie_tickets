@@ -16,6 +16,32 @@ describe('Person', function() {
   });
 });
 
+describe('Movie', function() {
+  describe('name', function () {
+    it('takes a movies name and returns "X-Men"', function () {
+      var newMovie = Object.create(Movie);
+      newMovie.name = 'X-Men';
+      expect(newMovie.name).to.equal('X-Men');
+    });
+  });
+
+  describe('times', function() {
+    it('takes a time and returns [3]', function() {
+      var newMovie = Object.create(Movie);
+      newMovie.addTime(3);
+      expect(newMovie.times).to.eql([3]);
+    });
+  });
+
+  describe('releaseDate', function() {
+    it('takes a date and returns 1424246400000', function() {
+      var newMovies = Object.create(Movie);
+      newMovie.dateReleased('Feb 18, 2015');
+      expect(newMovie.releaseDate).to.equal(1424246400000);
+    });
+  });
+});
+
 
 
 
