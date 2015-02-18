@@ -42,28 +42,18 @@ describe('Movie', function() {
   });
 });
 
+describe('Pricing', function() {
+  describe('firstRun', function() {
+    it('takes a price and returns 8.95', function() {
+      var newPrice = Object.create(Price);
+      newPrice.firstRun = 8.95;
+      expect(newPrice.firstRun).to.equal(8.95);
+    });
+  });
+});
 
 
 
-
-
-
-
-
-
-
-// Data Structure
-// var newMovie = {
-//   name: 'X-Men',
-//   times: [3, 5, 7, 9, 11],
-//   releaseDate: Date.parse('Feb 1, 2015')
-// }
-//
-// var newPerson = {
-//   name: 'Duane',
-//   age: 39
-// }
-//
 // var pricing = {
 //   firstRun: 8.95,
 //   secondRun: 6.45,
