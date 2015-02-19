@@ -26,9 +26,13 @@ $(document).ready(function() {
 
     var newMovie = Object.create(Movie);
     newMovie.name = movieName;
+    newMovie.releaseDate = releaseDate;
 
     $('ul#show-movies').append("<li><span class='movie'>" + newMovie.name + "</span></li>")
 
     $('input#movie-name').val("");
+
+    $('li.movie').click(function())
+
   });
 });
